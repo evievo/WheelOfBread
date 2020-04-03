@@ -2,7 +2,8 @@ import React from 'react';
 import {gsap, TweenMax} from 'gsap';
 import {withRouter} from 'react-router-dom';
 import circles from './static/circles/circles.js'
-import { gapi } from 'gapi-script';
+import people from './Colors.js'
+
 
 
 class Home extends React.Component {
@@ -60,6 +61,7 @@ class Home extends React.Component {
 
           </div>
           <div id = "web">
+            <img className = "web-img" src = "https://drive.google.com/uc?id=12LXHEwK3oVKpt29S3QoKxOL5rPw9ke0Y" alt = "web"/>
           </div>
           <div id = "circles">
             {Object.keys(this.state.circles).map((item, i) => {
@@ -67,9 +69,18 @@ class Home extends React.Component {
                 <div className = "circle-block"
                      key = {'circle_' + i}
                      ref = { circle => this['circle_' + i] = circle }>
-                  <div className = "circle-image" style = {{backgroundImage: "url(" +  this.state.circles[i]["path"]+ ")"}}>
-
+                  <img className = "circle-image" alt = {this.state.circles[i]["id"]} src = {this.state.circles[i]["path"]}/>
+                  <div className = "circle-people">
+                    {Object.keys(this.state.circles[i]["names"]).map((item, j) => {
+                      return(
+                        <div className = "people-block">
+                          <span style = {{ backgroundColor: this.returnColor(this.state.circles[i]["names"][j])}}></span>
+                          <p>{this.state.circles[i]["names"][j]}</p>
+                        </div>
+                      )})}
                   </div>
+
+
 
                 </div>
               )
@@ -101,6 +112,9 @@ class Home extends React.Component {
     });
   }
 
+  returnColor(person){
+    return people[person];
+  }
 
 
 

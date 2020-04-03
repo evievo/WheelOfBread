@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://use.typekit.net/qhd5mwd.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+:root{
+  --main-color: rgba(217, 178, 156, .1);
+  --type-fam-header: 'titling-gothic-fb-extended', sans-serif;
+  --type-fam-body: 'Open Sans', sans-serif;
+  --type-size-header: 100pt;
+  --type-size-body: 15pt;
+  --circle-height: 20pt;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+  cursor: hidden;
+}
+
+html, body {
+  width:100vw;
+  margin: 0px;
+  overflow-x: hidden;
+  background-color: var(--main-color);
+}
+
+#cursor{
+  width: 24px;
+  height: 24px;
+  font-size: 20pt;
+  position: absolute;
+  z-index: 999;
+  pointer-events: none;
+}
+
+#page{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top:0;
+  left:0;
+
+}
+
+#home{
+  height: 100vh;
+  width: 100%;
+}
+
+#home .title{
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  margin-top: 10vh;
+  font-size: var(--type-size-header);
+  font-family: var(--type-fam-header);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#home .story{
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  padding-top: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: var(--type-size-body);
+  font-family: var(--type-fam-body);
+  text-align: center;
+  font-weight: 300;
+  white-space: pre-line;
+  padding-bottom: 10%;
+}
+
+#home .story::before{
+
+  content: "The #WheelOfBread community was created by Alexi Bardha in Los Angeles, California on March 17th, 2020 in the form of an iMessage groupchat. Every ~4 days since March 17th Bardha has hosted a group Facetime - a Breadcast - where he spins his Wheel of Bread to determine what new dough the group will knead and bake. The group has until the next Breadcast to complete the challenge or else they’re sliced from the chat. \A \A#WheelOfBread started with 8 people: Alexi, Carolyn, Perah, Syd, Tegwyn, Cat and Dana. On March 22nd it grew to its highest count (to date) of 27 members, 30 have come and gone, and 17 remain. \A Follow each member’s voice through the chronological narrative below. \A \AThis story is formatted and collected by Dana.";
+}
+
+#web{
+  height: auto;
+  width: 100%;
+  padding-bottom: 10%;
+}
+
+#web .web-img{
+  width: 80%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#circles{
+  height: auto;
+  width: 100%;
+}
+
+#circles .circle-block{
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#circles .circle-image{
+  position: relative;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#circles .circle-people{
+  position: absolute;
+  top:50px;
+  left: 20px;
+  width: 40%;
+}
+
+#circles .people-block{
+   display: flex;
+
+}
+
+#circles .people-block span{
+  padding-top: 10px;
+  height: var(--circle-height);
+  width: var(--circle-height);
+  border-radius: 50%;
+  background-color: green;
+
+}
+#circles .people-block p{
+  position: relative;
+  margin-top: 5px;
+  font-size: 10pt;
+  padding-left: 10px;
+  font-family: var(--type-fam-body);
+
 }

@@ -1,0 +1,36 @@
+
+var people = {
+
+  "Alexi": "#173c5b",
+  "Dana": "#ffffff",
+  "Carolyn Gearig": "#ffec00",
+  "Perah": "#36787bb",
+  "Syd" : "#a4d000",
+  "Mckenna" : "#cb7653",
+  "Cat Kenzie" : "#5b5452",
+  "Tegwyn" : "#00a0d0",
+  "Addie" : "#905d58",
+  "Trevor Perah’s Roommate" : "#505944",
+  "Mikey Alexi’s Roommate" : "#fcv76b",
+  "Nick Alexi’s Roommate" : "#ecd095",
+  "Emma Doud" : "#009245",
+  "Joe Bread Guy" : "#571b8c",
+  "Clarissa" : "#86bdb8",
+  "Brandon Alexi’s Friend" : "#c649c9",
+  "Will Brandon Alexi’s Friend" : "#718785",
+  "Eve Brooklyn Bread Enthusiast" : "#de4036",
+  "Isa Flores" : "#ff8b00",
+  "Other Carolyn" : "#f1acf9",
+  "Mari Cohen" : "#eccc45",
+  "Anne Tsaloff" : "#2941a0",
+  "Laura V" : "#a7a396",
+  "Isabelle" : "#ff5c7b",
+  "Maria Caro’s Roommate" : "#00db7b",
+  "Emma Tegwyn’s Cousin" : "#a6a2ff",
+  "Sonya Bread Superstar" : "#cc8f4e",
+  "Liz Her Sister Has Made Bread Every Day Of Quarantine" : "#b7dede",
+  "Chris From Australia" : "#a62921",
+  "Rachel" : "#c1a307",
+}
+
+export default people;

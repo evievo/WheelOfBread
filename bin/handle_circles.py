@@ -37,8 +37,8 @@ def main():
 
     outfile = open('src/static/circles/circles.js', 'w')
     middle = json.dumps(data, sort_keys=True, indent=4, separators=(',', ': '))
-    #outfile.write(top % json.dumps(data, sort_keys=True, indent=4, separators=(',', ': ')) % bottom)
     out_string = top + middle + "\n" + bottom
+    print(out_string)
     outfile.write(out_string)
 if __name__ == "__main__":
     main()
